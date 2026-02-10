@@ -1,24 +1,72 @@
+/*home page functionality*/
 function startCountdown() {
-    const targetDate = new Date("Feb 28, 2026 18:00:00").getTime();
+    const targetDate = new Date("February 28, 2026 18:00:00").getTime();
+
+    const dElem = document.getElementById("days");
+    const hElem = document.getElementById("hours");
+    const mElem = document.getElementById("minutes");
+    const sElem = document.getElementById("seconds");
 
     const timer = setInterval(() => {
         const now = new Date().getTime();
         const distance = targetDate - now;
 
-        // Math for time units
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Update the display
-        document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
-        document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
-        document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
-
         if (distance < 0) {
             clearInterval(timer);
             document.querySelector(".countdown-display").innerHTML = "MATCH STARTED";
+            return;
         }
+
+        //calculate the time
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        if(dElem) dElem.innerText = days.toString().padStart(2, '0');
+        if(hElem) hElem.innerText = hours.toString().padStart(2, '0');
+        if(mElem) mElem.innerText = minutes.toString().padStart(2, '0');
+        if(sElem) sElem.innerText = seconds.toString().padStart(2, '0');
+        
     }, 1000);
 }
 startCountdown();
+
+
+/*schedule page functionality*/
+/*customizing tabs*/
+const tabs = document.querySelectorAll('.tab');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+    });
+});
+
+
+/*filtering*/
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.tab');
+    const cards = document.querySelectorAll('.match-card');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            const filterValue = tab.textContent;
+
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (filterValue === 'All' || filterValue === cardCategory) {
+                    card.style.display = 'grid';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});

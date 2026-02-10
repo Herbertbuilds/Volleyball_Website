@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUST Volleyball Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.jpg" class="logo-img">
+            <span class="logo-text">NUST VOLLEYBALL CLUB</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="schedule.html" class="active">SCHEDULE</a></li>
+            <li><a href="roster.html">ROSTER</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><button class="search-btn"><i class="fas fa-search"></i></button></li>
+        </ul>
+    </nav>
+</header>
+<main class="schedule-container">
+    <header class="schedule-header">
+        <h1>Match Schedule</h1>
+        <p>Upcoming games and tournament dates for the 2026 season</p>
+    </header>
+
+    <div class="filter-tabs">
+        <button class="tab active">All</button>
+        <button class="tab">Blazers</button>
+        <button class="tab">Falcons</button>
+        <button class="tab">Females</button>
+    </div>
+    <div class="schedule-list">
+        <div class="match-card" data-category="Blazers">
+            <div class="match-date">
+                <span class="day">28</span>
+                <span class="month">FEB 2026</span>
+            </div>
+
+            <div class="match-teams">
+                <div class="team home">
+                    <span class="team-name">NUST Blazers</span>
+                </div>
+                
+                <div class="vs-badge">VS</div>
+                
+                <div class="team away">
+                    <span class="team-name">UNAM Kings</span>
+                </div>
+            </div>
+
+            <div class="match-meta">
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i> 15:00
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-map-marker-alt"></i> Indoor Arena
+                </div>
+            </div>
+        </div>
+
+        <div class="match-card" data-category="Falcons">
+            <div class="match-date">
+                <time datetime="2026-02-28">
+                    <span class="day">28</span>
+                    <span class="month">FEB 2026</span>
+                </time>
+            </div>
+
+            <div class="match-teams">
+                <div class="team home">
+                    <span class="team-name">NUST Falcons</span>
+                </div>
+                
+                <div class="vs-badge">VS</div>
+                
+                <div class="team away">
+                    <span class="team-name">Kudos</span>
+                </div>
+            </div>
+
+            <div class="match-meta">
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i> 18:00
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-map-marker-alt"></i> Indoor Arena
+                </div>
+            </div>
+        </div>
+
+        <div class="match-card" data-category="Females">
+            <div class="match-date">
+                <time datetime="2026-02-28">
+                    <span class="day">28</span>
+                    <span class="month">FEB 2026</span>
+                </time>
+            </div>
+
+            <div class="match-teams">
+                <div class="team home">
+                    <span class="team-name">NUST</span>
+                </div>
+                
+                <div class="vs-badge">VS</div>
+                
+                <div class="team away">
+                    <span class="team-name">UNAM Queens</span>
+                </div>
+            </div>
+
+            <div class="match-meta">
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i> 18:00
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-map-marker-alt"></i> Indoor Arena
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -11,15 +11,15 @@
     <header>
     <nav>
         <div class="logo">
-            <img src="assets/logo.jpg" class="logo-img">
+            <img src="assets/logo.jpg" class="logo-img" alt="NUST Volleyball Club Logo">
             <span class="logo-text">NUST VOLLEYBALL CLUB</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#" class="active">HOME</a></li>
-            <li><a href="#">SCHEDULE</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">ROSTER</a></li>
-            <li><a href="#">HISTORY</a></li>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="roster.html">ROSTER</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="history.html">HISTORY</a></li>
             <li><button class="search-btn"><i class="fas fa-search"></i></button></li>
         </ul>
     </nav>
@@ -28,6 +28,7 @@
     <div class="hero-content">
         <h3>COUNTDOWN TO KICKOFF</h3>
         <div class="countdown-display">
+            <span id="days">00</span>d :
             <span id="hours">00</span>h : 
             <span id="minutes">00</span>m : 
             <span id="seconds">00</span>s
@@ -75,8 +76,8 @@
             <div class="event-card">
                 <div class="event-icon-box"><i class="fas fa-trophy"></i></div>
                 <div class="event-info">
-                    <span class="event-date">Sat, Feb 14, 2026</span>
-                    <h4>NUST vs UNAM</h4>
+                    <span class="event-date">Sat, Feb 28, 2026</span>
+                    <h4>NUST B vs UNAM K</h4>
                     <p>Indoor Arena, Windhoek</p>
                 </div>
                 <div class="add-calendar"><i class="fas fa-calendar-plus"></i></div>
@@ -85,20 +86,20 @@
             <div class="event-card">
                 <div class="event-icon-box"><i class="fas fa-trophy"></i></div>
                 <div class="event-info">
-                    <span class="event-date">Sat, Feb 14, 2026</span>
-                    <h4>NUST vs NDF H</h4>
+                    <span class="event-date">Sat, Feb 28, 2026</span>
+                    <h4>NUST F vs KUDOS</h4>
                     <p>Indoor Arena, Windhoek</p>
                 </div>
                 <div class="add-calendar"><i class="fas fa-calendar-plus"></i></div>
             </div>
 
-             <button class="view-schedule-btn">VIEW FULL SCHEDULE</button>
+            <a href="schedule.html" class="view-schedule-btn">VIEW FULL SCHEDULE</a>
 
             <div class="connect-section">
                 <p>CONNECT WITH US</p>
                 <div class="social-icons-row">
-                    <i class="fab fa-instagram"></i>
-                    <i class="far fa-envelope"></i>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <i class="far fa-envelope" aria-hidden="true"></i>
                 </div>
             </div>
         </aside>
@@ -119,7 +120,6 @@
             <ul>
                 <li><a href="#">Membership</a></li>
                 <li><a href="#">Training Times</a></li>
-                <li><a href="#">Hall of Fame</a></li>
             </ul>
         </div>
 
