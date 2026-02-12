@@ -34,6 +34,25 @@ body {
     color: var(--text);
 }
 
+/*Secondary footer*/
+.secondary-footer {
+    background-color: var(--main-blue);
+    padding: 30px 0;
+    width: 100%;
+}
+
+
+.footer-bottom-wrap {
+    text-align: center;
+}
+
+.footer-copy {
+    color: var(--event-hover-light);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
 
 /*logo styling*/
 .logo {
@@ -310,7 +329,7 @@ nav {
 .connect-section {
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--light-gray-borderx);
     text-align: center;
 }
 
@@ -325,7 +344,7 @@ nav {
 .social-icons-row {
     display: flex;
     justify-content: space-around;
-    color: #94a3b8;
+    color: var(--gray-text);
     font-size: 21px;
     cursor: pointer;
 }
@@ -338,6 +357,10 @@ nav {
 .fa-envelope:hover {
     color: var(--main-blue);
     scale: 1.2;
+}
+
+.fa-tiktok:hover {
+    color: initial;
 }
 
 /*media*/
@@ -611,7 +634,6 @@ nav {
     overflow: hidden;
     display: flex;
     flex-direction:column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
@@ -682,4 +704,373 @@ nav {
     font-weight: 600;
     color: var(--gray-text);
     margin: 0;
+}
+
+
+
+/*club info page*/
+
+.hero-info {
+    background-color: var(--main-blue);
+    color: var(--white);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    color: var(--event-hover-light);
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+
+/*mission section*/
+.mission-section {
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.mission-text {
+    flex: 2;
+}
+
+.side-title {
+    font-size: 2rem;
+    color: var(--text);
+    border-left: 5px solid var(--lighter-blue);
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.mission-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--gray-text);
+}
+
+.mission-image {
+    flex: 3;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.mission-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/*executive section*/
+.exec-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section-center-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.exec-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exec-card {
+    flex: 0 1 calc(25% - 40px);
+    min-width: 250px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.exec-card:hover {
+    transform: translateY(-10px);
+}
+
+.exec-img-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.exec-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exec-role {
+    color: var(--lighter-blue);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.exec-name {
+    font-size: 1.1rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+
+/*technical staff*/
+.tech-staff-section {
+    width: 100%;
+    text-align: center;
+}
+
+.tech-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.tech-card {
+    position: relative;
+    background: var(--white);
+    border-radius: 40px;
+    padding: 50px 40px;
+    width: 320px;
+    text-align: center;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+}
+
+.role-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--lighter-blue);
+    color: var(--white);
+    padding: 10px 25px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    border-radius: 0 40px 0 20px;
+}
+
+.tech-img-wrapper {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.tech-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tech-name {
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+
+
+/*teams leadership section*/
+.team-leadership-container {
+    padding: 60px 20px;
+    background-color: var(--background);
+}
+
+.leadership-glass-card {
+    background: var(--white);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    border-radius: 60px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    text-align: center;
+}
+
+.leadership-title {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.teams-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+
+.team-column {
+    flex: 1;
+}
+
+.team-name-club {
+    color: var(--lighter-blue);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--event-hover-light);
+}
+
+.leader-row {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.p-name {
+    font-weight: 700;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.p-role {
+    color: var(--gray-text);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+
+/*training section*/
+.training-section {
+    padding: 80px 20px;
+    background-color: var(--background);
+}
+
+.mega-card {
+    background: var(--main-blue);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    padding: 60px;
+    gap: 40px;
+    color: var(--white);
+    align-items: center;
+}
+
+.training-side {
+    flex: 1.2;
+}
+
+.training-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.training-title i {
+    color: var(--yellow);
+}
+
+.training-note {
+    color: var(--event-hover-light);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.schedule-row {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 18px 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.schedule-row .time {
+    color: var(--yellow);
+}
+
+/*join card*/
+.join-side {
+    flex: 1;
+}
+
+.join-card {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.join-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.join-card p {
+    color: var(--event-hover-light);
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    background: var(--lighter-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3b82f6;
+}
+
+.contact-label {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: var(--event-hover-light);
+    letter-spacing: 1px;
+}
+
+.contact-value {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
 }
