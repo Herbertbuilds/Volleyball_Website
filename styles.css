@@ -344,9 +344,12 @@ nav {
 .social-icons-row {
     display: flex;
     justify-content: space-around;
-    color: var(--gray-text);
     font-size: 21px;
     cursor: pointer;
+}
+
+.social-link{
+    color: var(--gray-text);
 }
 
 .fa-instagram:hover {
@@ -1018,6 +1021,18 @@ nav {
 
 .schedule-row .time {
     color: var(--yellow);
+}
+
+.location-link {
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.location-link:hover {
+    color: #fbbf24;
+    text-decoration-thickness: 2px;
 }
 
 /*join card*/
