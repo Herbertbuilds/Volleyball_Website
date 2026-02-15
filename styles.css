@@ -1325,3 +1325,102 @@ nav {
     border-bottom-right-radius: 5px;
     transition: border-radius 0.3s ease;
 }
+
+
+
+/*history page*/
+.history-hero {
+    background-color: var(--main-blue);
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--white);
+}
+
+.legacy-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.legacy-subtitle {
+    font-size: 1.1rem;
+    color: var(--light-gray-text);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    margin: 40px auto;
+    gap: 10px;
+}
+
+
+.timeline-date-side, 
+.timeline-content-box {
+    flex: 1;
+    padding: 0 40px;
+}
+
+
+.timeline-date-side {
+    text-align: right;
+}
+
+.timeline-year {
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--main-blue);
+    line-height: 1;
+}
+
+.timeline-status {
+    font-size: 1rem;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.timeline-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-blue);;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--yellow);
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+
+.timeline-content-box {
+    background: var(--white);
+    padding: 25px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+
+.right-style {
+    flex-direction: row-reverse;
+}
+
+.right-style .timeline-date-side {
+    text-align: left;
+}
+
+.right-style .timeline-content-box {
+    text-align: right;
+}
