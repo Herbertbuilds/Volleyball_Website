@@ -1096,8 +1096,15 @@ nav {
 
 .contact-value {
     display: block;
+    text-decoration: none;
+    color: var(--white);
     font-weight: 700;
     font-size: 1.1rem;
+}
+
+.contact-value:hover {
+    text-decoration: underline;
+    color: var(--yellow);
 }
 
 
